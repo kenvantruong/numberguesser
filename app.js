@@ -1,10 +1,12 @@
 /*
 GAME FUNCTION:
+
 - Player must guess a number between a min and max
 - Player gets a certain amount of guesses
 - Notify player of guesses remaining
 - Notify the player of the correct answer if loose
 - Let player choose to play again
+
 */
 
 // Game Values: Rules
@@ -95,13 +97,13 @@ gamePlatform.addEventListener('mousedown', function(e){
 
 
 
-// ⬆︎ Set Message for "Please enter a number between ${min} and ${max}"
+// ⬆︎  Set Message for "Please enter a number between ${min} and ${max}"
 function setMessage(msg, color){
   alertMessage.style.color = color;
   alertMessage.textContent = msg;
 }
 
-// Get Winning Number---------------
+// Get  Winning Number---------------
 function getRandomNum(min, max){
   return (Math.floor(Math.random() * (max-min+1)+min));
 }
